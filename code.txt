@@ -68,45 +68,33 @@ int main(){
 
 int main() {
     float marks;
-    char grade;
-    float gpa;
-
     printf("Enter marks (0-100): ");
     scanf("%f", &marks);
-
-    switch ((int) marks / 10) {
+    switch ((int)marks/10)
+    {
         case 10:
         case 9:
-            grade = 'A';
-            gpa = 4.00;
+            printf("grade = A+");
             break;
         case 8:
-            grade = 'A';
-            gpa = 3.75;
+            printf("grade = A");
             break;
         case 7:
-            grade = 'A';
-            gpa = 3.50;
+            printf("grade = A-");
             break;
         case 6:
-            grade = 'B';
-            gpa = 3.00;
+            printf("grade = B");
             break;
         case 5:
-            grade = 'C';
-            gpa = 2.00;
+            printf("grade = C");
             break;
         case 4:
-            grade = 'D';
-            gpa = 1.00;
+            printf("grade = D");
             break;
         default:
-            grade = 'F';
-            gpa = 0.00;
+            printf("grade = F");
     }
-
-    printf("Grade: %c\n", grade);
-    printf("GPA: %.2f\n", gpa);
 
     return 0;
 }
+
